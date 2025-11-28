@@ -293,3 +293,51 @@ footer p {
   padding: 0;
   line-height: 1.4;
 }
+/* ===== MOBILE RESPONSIVE FIX ===== */
+@media (max-width: 480px) {
+
+  /* Reduce container padding on mobile */
+  .container {
+    padding: 20px;
+  }
+
+  /* Make footer text smaller & prevent wrapping weirdly */
+  footer p {
+    font-size: 0.85rem;
+    white-space: normal;
+    text-align: center;
+    margin: 4px 0 !important;
+    word-break: break-word; /* prevents overflow */
+  }
+
+  /* Prevent long links from breaking into ugly chunks */
+  footer a, footer p a {
+    word-break: break-all;
+  }
+
+  /* Make H1 smaller for phones */
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  /* Fix cards spacing */
+  .plan, .card {
+    padding: 15px;
+  }
+
+  /* Fix images scaling on mobile */
+  .plan-img-box {
+    height: 130px;
+  }
+
+  /* Contact form padding fix */
+  .contact-form, .payment-form {
+    padding: 20px;
+  }
+
+  /* Reduce button padding */
+  .btn {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+  }
+}
